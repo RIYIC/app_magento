@@ -1,0 +1,1372 @@
+I, [2015-11-24T18:10:23.441414 #47]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-24T18:10:23.500429 #47]  INFO -- Kitchen: -----> Creating <default-prefapp>...
+E, [2015-11-24T18:10:26.544674 #47] ERROR -- Kitchen: ------Exception-------
+E, [2015-11-24T18:10:26.544806 #47] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-11-24T18:10:26.544870 #47] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1]
+E, [2015-11-24T18:10:26.544924 #47] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-11-24T18:10:26.544970 #47] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-11-24T18:10:26.545015 #47] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1
+E, [2015-11-24T18:10:26.545062 #47] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-11-24T18:10:26.545106 #47] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-11-24T18:10:26.545153 #47] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-11-24T18:10:26.545198 #47] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-11-24T18:10:26.545243 #47] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:138:in `docker_command'
+E, [2015-11-24T18:10:26.545288 #47] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:221:in `build_image'
+E, [2015-11-24T18:10:26.545333 #47] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:93:in `create'
+E, [2015-11-24T18:10:26.545378 #47] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-11-24T18:10:26.545523 #47] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-11-24T18:10:26.545577 #47] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-11-24T18:10:26.545624 #47] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-11-24T18:10:26.545669 #47] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-11-24T18:10:26.545714 #47] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-11-24T18:10:26.545759 #47] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-11-24T18:10:26.545804 #47] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-11-24T18:10:26.545871 #47] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-11-24T18:10:26.545922 #47] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-11-24T18:10:26.545970 #47] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-11-24T18:10:26.546031 #47] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-11-24T18:10:26.546089 #47] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-11-24T18:10:26.546136 #47] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-11-24T18:10:26.546183 #47] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-11-24T18:10:26.546228 #47] ERROR -- Kitchen: ----------------------
+I, [2015-11-24T18:11:17.935559 #71]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-24T18:11:17.992023 #71]  INFO -- Kitchen: -----> Creating <default-prefapp>...
+E, [2015-11-24T18:11:18.036507 #71] ERROR -- Kitchen: ------Exception-------
+E, [2015-11-24T18:11:18.036602 #71] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-11-24T18:11:18.036645 #71] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of docker -H 172.17.0.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H 172.17.0.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H 172.17.0.1:4243 build --no-cache - 2>/dev/null returned 1]
+E, [2015-11-24T18:11:18.036681 #71] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-11-24T18:11:18.036711 #71] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-11-24T18:11:18.036740 #71] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker -H 172.17.0.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H 172.17.0.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H 172.17.0.1:4243 build --no-cache - 2>/dev/null returned 1
+E, [2015-11-24T18:11:18.036771 #71] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-11-24T18:11:18.036799 #71] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-11-24T18:11:18.036829 #71] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-11-24T18:11:18.036858 #71] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-11-24T18:11:18.036887 #71] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:138:in `docker_command'
+E, [2015-11-24T18:11:18.036965 #71] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:221:in `build_image'
+E, [2015-11-24T18:11:18.036994 #71] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:93:in `create'
+E, [2015-11-24T18:11:18.037022 #71] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-11-24T18:11:18.037050 #71] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-11-24T18:11:18.037078 #71] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-11-24T18:11:18.037113 #71] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-11-24T18:11:18.037141 #71] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-11-24T18:11:18.037169 #71] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-11-24T18:11:18.037208 #71] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-11-24T18:11:18.037242 #71] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-11-24T18:11:18.037272 #71] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-11-24T18:11:18.037301 #71] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-11-24T18:11:18.037329 #71] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-11-24T18:11:18.037357 #71] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-11-24T18:11:18.037385 #71] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-11-24T18:11:18.037413 #71] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-11-24T18:11:18.037441 #71] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-11-24T18:11:18.037469 #71] ERROR -- Kitchen: ----------------------
+I, [2015-11-24T18:13:18.443405 #29]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-24T18:13:18.496600 #29]  INFO -- Kitchen: -----> Creating <default-prefapp>...
+E, [2015-11-24T18:13:21.532838 #29] ERROR -- Kitchen: ------Exception-------
+E, [2015-11-24T18:13:21.532964 #29] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-11-24T18:13:21.533016 #29] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1]
+E, [2015-11-24T18:13:21.533056 #29] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-11-24T18:13:21.533091 #29] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-11-24T18:13:21.533124 #29] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1
+E, [2015-11-24T18:13:21.533160 #29] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-11-24T18:13:21.533194 #29] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-11-24T18:13:21.533228 #29] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-11-24T18:13:21.533262 #29] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-11-24T18:13:21.533296 #29] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:138:in `docker_command'
+E, [2015-11-24T18:13:21.533334 #29] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:221:in `build_image'
+E, [2015-11-24T18:13:21.533413 #29] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:93:in `create'
+E, [2015-11-24T18:13:21.533449 #29] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-11-24T18:13:21.533496 #29] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-11-24T18:13:21.533535 #29] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-11-24T18:13:21.533568 #29] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-11-24T18:13:21.533602 #29] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-11-24T18:13:21.533635 #29] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-11-24T18:13:21.533668 #29] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-11-24T18:13:21.533705 #29] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-11-24T18:13:21.533739 #29] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-11-24T18:13:21.533777 #29] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-11-24T18:13:21.533811 #29] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-11-24T18:13:21.533845 #29] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-11-24T18:13:21.533898 #29] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-11-24T18:13:21.533965 #29] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-11-24T18:13:21.534007 #29] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-11-24T18:13:21.534046 #29] ERROR -- Kitchen: ----------------------
+I, [2015-11-24T18:13:28.767593 #50]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-24T18:13:28.816707 #50]  INFO -- Kitchen: -----> Creating <default-prefapp>...
+E, [2015-11-24T18:13:49.345100 #50] ERROR -- Kitchen: ------Exception-------
+E, [2015-11-24T18:13:49.345200 #50] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-11-24T18:13:49.345247 #50] ERROR -- Kitchen: Message: Failed to complete #create action: [bad URI(is not URI?): 172.17.0.1:4243]
+E, [2015-11-24T18:13:49.345287 #50] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-11-24T18:13:49.345321 #50] ERROR -- Kitchen: Class: URI::InvalidURIError
+E, [2015-11-24T18:13:49.345354 #50] ERROR -- Kitchen: Message: bad URI(is not URI?): 172.17.0.1:4243
+E, [2015-11-24T18:13:49.345534 #50] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-11-24T18:13:49.345583 #50] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/uri/common.rb:176:in `split'
+E, [2015-11-24T18:13:49.345618 #50] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/uri/common.rb:211:in `parse'
+E, [2015-11-24T18:13:49.345651 #50] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/uri/common.rb:747:in `parse'
+E, [2015-11-24T18:13:49.345682 #50] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:127:in `socket_uri'
+E, [2015-11-24T18:13:49.345804 #50] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:121:in `remote_socket?'
+E, [2015-11-24T18:13:49.345854 #50] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:95:in `create'
+E, [2015-11-24T18:13:49.345899 #50] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-11-24T18:13:49.345949 #50] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-11-24T18:13:49.345988 #50] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-11-24T18:13:49.346118 #50] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-11-24T18:13:49.346159 #50] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-11-24T18:13:49.346193 #50] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-11-24T18:13:49.346225 #50] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-11-24T18:13:49.346258 #50] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-11-24T18:13:49.346292 #50] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-11-24T18:13:49.346325 #50] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-11-24T18:13:49.346444 #50] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-11-24T18:13:49.346488 #50] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-11-24T18:13:49.346522 #50] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-11-24T18:13:49.346556 #50] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-11-24T18:13:49.346589 #50] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-11-24T18:13:49.346621 #50] ERROR -- Kitchen: ----------------------
+I, [2015-11-24T18:15:37.532136 #80]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-24T18:15:37.594768 #80]  INFO -- Kitchen: -----> Creating <default-prefapp>...
+I, [2015-11-24T18:15:38.686489 #80]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+E, [2015-11-24T18:15:59.426393 #80] ERROR -- Kitchen: Converge failed on instance <default-prefapp>.
+I, [2015-11-24T18:17:02.587594 #102]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-24T18:17:02.645457 #102]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+E, [2015-11-24T18:18:01.926907 #102] ERROR -- Kitchen: Converge failed on instance <default-prefapp>.
+I, [2015-11-24T18:21:49.163072 #117]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-24T18:21:49.228158 #117]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+E, [2015-11-24T18:22:10.555295 #117] ERROR -- Kitchen: Converge failed on instance <default-prefapp>.
+I, [2015-11-24T18:30:08.997666 #133]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-24T18:30:09.060227 #133]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+E, [2015-11-24T18:30:29.716810 #133] ERROR -- Kitchen: Converge failed on instance <default-prefapp>.
+I, [2015-11-24T18:33:22.623416 #145]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-24T18:33:22.682441 #145]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+E, [2015-11-24T18:33:43.369577 #145] ERROR -- Kitchen: Converge failed on instance <default-prefapp>.
+I, [2015-11-24T18:35:07.165253 #159]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-24T18:35:07.226707 #159]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+I, [2015-11-24T18:39:49.150843 #159]  INFO -- Kitchen: -----> Kitchen is finished. (4m41.98s)
+I, [2015-11-24T18:44:05.480917 #184]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-24T18:44:05.538518 #184]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+I, [2015-11-24T18:44:58.674932 #184]  INFO -- Kitchen: -----> Kitchen is finished. (0m53.19s)
+I, [2015-11-24T18:50:38.377102 #208]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-24T18:50:38.437768 #208]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+I, [2015-11-24T18:53:12.522082 #208]  INFO -- Kitchen: -----> Kitchen is finished. (2m34.14s)
+I, [2015-11-25T17:19:59.071707 #22]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-25T17:19:59.147395 #22]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+I, [2015-11-25T17:20:52.514863 #22]  INFO -- Kitchen: -----> Kitchen is finished. (0m53.44s)
+I, [2015-11-25T17:26:50.431024 #16]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-25T17:26:50.490616 #16]  INFO -- Kitchen: -----> Destroying <default-prefapp>...
+I, [2015-11-25T17:26:56.529791 #16]  INFO -- Kitchen: -----> Kitchen is finished. (0m6.10s)
+I, [2015-11-25T17:27:50.586937 #37]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-25T17:27:50.642789 #37]  INFO -- Kitchen: -----> Creating <default-prefapp>...
+E, [2015-11-25T17:27:53.686858 #37] ERROR -- Kitchen: ------Exception-------
+E, [2015-11-25T17:27:53.686982 #37] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-11-25T17:27:53.687067 #37] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1]
+E, [2015-11-25T17:27:53.687114 #37] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-11-25T17:27:53.687153 #37] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-11-25T17:27:53.687191 #37] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1
+E, [2015-11-25T17:27:53.687229 #37] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-11-25T17:27:53.687264 #37] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-11-25T17:27:53.687301 #37] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-11-25T17:27:53.687337 #37] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-11-25T17:27:53.687372 #37] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:138:in `docker_command'
+E, [2015-11-25T17:27:53.687409 #37] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:221:in `build_image'
+E, [2015-11-25T17:27:53.687505 #37] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:93:in `create'
+E, [2015-11-25T17:27:53.687543 #37] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-11-25T17:27:53.687579 #37] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-11-25T17:27:53.687614 #37] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-11-25T17:27:53.687666 #37] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-11-25T17:27:53.687708 #37] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-11-25T17:27:53.687744 #37] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-11-25T17:27:53.687779 #37] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-11-25T17:27:53.687814 #37] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-11-25T17:27:53.687850 #37] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-11-25T17:27:53.687886 #37] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-11-25T17:27:53.687922 #37] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-11-25T17:27:53.687957 #37] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-11-25T17:27:53.687993 #37] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-11-25T17:27:53.688029 #37] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-11-25T17:27:53.688065 #37] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-11-25T17:27:53.688148 #37] ERROR -- Kitchen: ----------------------
+I, [2015-11-25T17:28:59.344221 #58]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-25T17:28:59.402569 #58]  INFO -- Kitchen: -----> Creating <default-prefapp>...
+I, [2015-11-25T17:29:28.384071 #58]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+I, [2015-11-25T17:35:00.354222 #58]  INFO -- Kitchen: -----> Kitchen is finished. (6m1.01s)
+I, [2015-11-25T18:00:15.613925 #113]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-25T18:00:15.697482 #113]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+I, [2015-11-25T18:01:14.506215 #113]  INFO -- Kitchen: -----> Kitchen is finished. (0m58.89s)
+I, [2015-11-25T18:27:40.332407 #161]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-25T18:27:40.397017 #161]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+E, [2015-11-25T18:28:31.250333 #161] ERROR -- Kitchen: Converge failed on instance <default-prefapp>.
+I, [2015-11-25T18:30:49.144087 #176]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-25T18:30:49.215645 #176]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+E, [2015-11-25T18:31:51.905871 #176] ERROR -- Kitchen: Converge failed on instance <default-prefapp>.
+I, [2015-11-25T18:33:21.578347 #189]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-25T18:33:21.638368 #189]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+E, [2015-11-25T18:34:10.300586 #189] ERROR -- Kitchen: Converge failed on instance <default-prefapp>.
+I, [2015-11-26T08:04:30.784591 #267]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-26T08:04:30.842419 #267]  INFO -- Kitchen: -----> Destroying <default-prefapp>...
+I, [2015-11-26T08:04:33.682483 #267]  INFO -- Kitchen: -----> Kitchen is finished. (0m2.90s)
+I, [2015-11-26T08:04:44.214227 #306]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-26T08:04:44.270683 #306]  INFO -- Kitchen: -----> Creating <default-prefapp>...
+I, [2015-11-26T08:05:13.435654 #306]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+I, [2015-11-26T08:10:41.734108 #306]  INFO -- Kitchen: -----> Kitchen is finished. (5m57.52s)
+I, [2015-11-26T09:45:36.478253 #371]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-26T09:45:36.542695 #371]  INFO -- Kitchen: -----> Destroying <default-prefapp>...
+I, [2015-11-26T09:45:39.647366 #371]  INFO -- Kitchen: -----> Kitchen is finished. (0m3.17s)
+I, [2015-11-27T12:33:03.992821 #935]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-27T12:33:04.050832 #935]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+I, [2015-11-27T12:33:31.186496 #935]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+E, [2015-11-27T12:33:51.210919 #935] ERROR -- Kitchen: Converge failed on instance <completa-prefapp>.
+I, [2015-11-27T12:36:35.062615 #987]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-27T12:36:35.121367 #987]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+E, [2015-11-27T12:36:47.403844 #987] ERROR -- Kitchen: Converge failed on instance <completa-prefapp>.
+I, [2015-11-27T12:37:47.857709 #1011]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-27T12:37:47.914572 #1011]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+I, [2015-11-27T12:43:56.398377 #1011]  INFO -- Kitchen: -----> Kitchen is finished. (6m8.54s)
+I, [2015-11-30T07:58:45.220483 #21]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-30T07:58:45.303390 #21]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+I, [2015-11-30T08:01:43.896012 #21]  INFO -- Kitchen: -----> Kitchen is finished. (2m58.67s)
+I, [2015-11-30T08:05:08.605957 #44]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-30T08:05:08.666703 #44]  INFO -- Kitchen: -----> Destroying <completa-prefapp>...
+I, [2015-11-30T08:05:14.713101 #44]  INFO -- Kitchen: -----> Kitchen is finished. (0m6.11s)
+I, [2015-11-30T09:59:06.075560 #68]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-30T09:59:06.134797 #68]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+E, [2015-11-30T09:59:09.193069 #68] ERROR -- Kitchen: ------Exception-------
+E, [2015-11-30T09:59:09.193264 #68] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-11-30T09:59:09.193332 #68] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1]
+E, [2015-11-30T09:59:09.193379 #68] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-11-30T09:59:09.193417 #68] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-11-30T09:59:09.193455 #68] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1
+E, [2015-11-30T09:59:09.193492 #68] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-11-30T09:59:09.193529 #68] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-11-30T09:59:09.193567 #68] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-11-30T09:59:09.193604 #68] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-11-30T09:59:09.193641 #68] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:138:in `docker_command'
+E, [2015-11-30T09:59:09.193676 #68] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:221:in `build_image'
+E, [2015-11-30T09:59:09.194264 #68] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:93:in `create'
+E, [2015-11-30T09:59:09.194347 #68] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-11-30T09:59:09.194390 #68] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-11-30T09:59:09.194428 #68] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-11-30T09:59:09.194465 #68] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-11-30T09:59:09.194502 #68] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-11-30T09:59:09.194539 #68] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-11-30T09:59:09.194574 #68] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-11-30T09:59:09.194612 #68] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-11-30T09:59:09.194648 #68] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-11-30T09:59:09.194684 #68] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-11-30T09:59:09.194804 #68] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-11-30T09:59:09.194850 #68] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-11-30T09:59:09.194886 #68] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-11-30T09:59:09.194921 #68] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-11-30T09:59:09.194956 #68] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-11-30T09:59:09.194991 #68] ERROR -- Kitchen: ----------------------
+I, [2015-11-30T09:59:53.120313 #91]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-30T09:59:53.177047 #91]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+E, [2015-11-30T09:59:56.220706 #91] ERROR -- Kitchen: ------Exception-------
+E, [2015-11-30T09:59:56.220823 #91] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-11-30T09:59:56.220876 #91] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1]
+E, [2015-11-30T09:59:56.220920 #91] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-11-30T09:59:56.220960 #91] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-11-30T09:59:56.220999 #91] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1
+E, [2015-11-30T09:59:56.221038 #91] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-11-30T09:59:56.221091 #91] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-11-30T09:59:56.221135 #91] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-11-30T09:59:56.221174 #91] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-11-30T09:59:56.221215 #91] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:138:in `docker_command'
+E, [2015-11-30T09:59:56.221254 #91] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:221:in `build_image'
+E, [2015-11-30T09:59:56.221297 #91] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:93:in `create'
+E, [2015-11-30T09:59:56.221334 #91] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-11-30T09:59:56.221425 #91] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-11-30T09:59:56.221464 #91] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-11-30T09:59:56.221501 #91] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-11-30T09:59:56.221542 #91] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-11-30T09:59:56.221583 #91] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-11-30T09:59:56.221621 #91] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-11-30T09:59:56.221662 #91] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-11-30T09:59:56.221701 #91] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-11-30T09:59:56.221739 #91] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-11-30T09:59:56.221776 #91] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-11-30T09:59:56.221814 #91] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-11-30T09:59:56.221852 #91] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-11-30T09:59:56.221896 #91] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-11-30T09:59:56.221934 #91] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-11-30T09:59:56.221971 #91] ERROR -- Kitchen: ----------------------
+I, [2015-11-30T10:01:22.192250 #114]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-30T10:01:22.254001 #114]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+E, [2015-11-30T10:01:25.297796 #114] ERROR -- Kitchen: ------Exception-------
+E, [2015-11-30T10:01:25.297941 #114] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-11-30T10:01:25.298015 #114] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1]
+E, [2015-11-30T10:01:25.298096 #114] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-11-30T10:01:25.298150 #114] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-11-30T10:01:25.298189 #114] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1
+E, [2015-11-30T10:01:25.298227 #114] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-11-30T10:01:25.298262 #114] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-11-30T10:01:25.298299 #114] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-11-30T10:01:25.298335 #114] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-11-30T10:01:25.298375 #114] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:138:in `docker_command'
+E, [2015-11-30T10:01:25.298416 #114] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:221:in `build_image'
+E, [2015-11-30T10:01:25.298453 #114] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:93:in `create'
+E, [2015-11-30T10:01:25.298488 #114] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-11-30T10:01:25.298524 #114] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-11-30T10:01:25.298560 #114] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-11-30T10:01:25.298596 #114] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-11-30T10:01:25.298631 #114] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-11-30T10:01:25.298667 #114] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-11-30T10:01:25.298729 #114] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-11-30T10:01:25.298769 #114] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-11-30T10:01:25.298805 #114] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-11-30T10:01:25.298841 #114] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-11-30T10:01:25.298877 #114] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-11-30T10:01:25.298912 #114] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-11-30T10:01:25.298948 #114] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-11-30T10:01:25.298983 #114] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-11-30T10:01:25.299122 #114] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-11-30T10:01:25.299161 #114] ERROR -- Kitchen: ----------------------
+I, [2015-11-30T10:01:36.830482 #134]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-30T10:01:36.881162 #134]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+E, [2015-11-30T10:01:39.928053 #134] ERROR -- Kitchen: ------Exception-------
+E, [2015-11-30T10:01:39.928159 #134] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-11-30T10:01:39.928199 #134] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1]
+E, [2015-11-30T10:01:39.928226 #134] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-11-30T10:01:39.928248 #134] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-11-30T10:01:39.928269 #134] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1
+E, [2015-11-30T10:01:39.928290 #134] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-11-30T10:01:39.928311 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-11-30T10:01:39.928334 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-11-30T10:01:39.928355 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-11-30T10:01:39.928377 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:138:in `docker_command'
+E, [2015-11-30T10:01:39.928398 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:221:in `build_image'
+E, [2015-11-30T10:01:39.928419 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:93:in `create'
+E, [2015-11-30T10:01:39.928440 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-11-30T10:01:39.928462 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-11-30T10:01:39.928483 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-11-30T10:01:39.928503 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-11-30T10:01:39.928524 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-11-30T10:01:39.928546 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-11-30T10:01:39.928566 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-11-30T10:01:39.928590 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-11-30T10:01:39.928612 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-11-30T10:01:39.928709 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-11-30T10:01:39.928738 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-11-30T10:01:39.928760 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-11-30T10:01:39.928781 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-11-30T10:01:39.928802 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-11-30T10:01:39.928823 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-11-30T10:01:39.928843 #134] ERROR -- Kitchen: ----------------------
+I, [2015-11-30T10:15:24.309988 #21]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-30T10:15:24.372820 #21]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+E, [2015-11-30T10:15:27.410758 #21] ERROR -- Kitchen: ------Exception-------
+E, [2015-11-30T10:15:27.410831 #21] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-11-30T10:15:27.410864 #21] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1]
+E, [2015-11-30T10:15:27.410889 #21] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-11-30T10:15:27.410910 #21] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-11-30T10:15:27.410930 #21] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1
+E, [2015-11-30T10:15:27.410951 #21] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-11-30T10:15:27.410971 #21] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-11-30T10:15:27.410992 #21] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-11-30T10:15:27.411082 #21] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-11-30T10:15:27.411123 #21] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:138:in `docker_command'
+E, [2015-11-30T10:15:27.411146 #21] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:221:in `build_image'
+E, [2015-11-30T10:15:27.411166 #21] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:93:in `create'
+E, [2015-11-30T10:15:27.411187 #21] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-11-30T10:15:27.411208 #21] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-11-30T10:15:27.411228 #21] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-11-30T10:15:27.411248 #21] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-11-30T10:15:27.411296 #21] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-11-30T10:15:27.411328 #21] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-11-30T10:15:27.411349 #21] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-11-30T10:15:27.411371 #21] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-11-30T10:15:27.411431 #21] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-11-30T10:15:27.411453 #21] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-11-30T10:15:27.411474 #21] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-11-30T10:15:27.411494 #21] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-11-30T10:15:27.411521 #21] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-11-30T10:15:27.411541 #21] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-11-30T10:15:27.411562 #21] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-11-30T10:15:27.411582 #21] ERROR -- Kitchen: ----------------------
+I, [2015-11-30T10:16:40.841331 #54]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-30T10:16:40.895851 #54]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+E, [2015-11-30T10:16:43.936845 #54] ERROR -- Kitchen: ------Exception-------
+E, [2015-11-30T10:16:43.936915 #54] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-11-30T10:16:43.936946 #54] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1]
+E, [2015-11-30T10:16:43.936971 #54] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-11-30T10:16:43.936994 #54] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-11-30T10:16:43.937015 #54] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1
+E, [2015-11-30T10:16:43.937036 #54] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-11-30T10:16:43.937057 #54] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-11-30T10:16:43.937079 #54] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-11-30T10:16:43.937100 #54] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-11-30T10:16:43.937121 #54] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:138:in `docker_command'
+E, [2015-11-30T10:16:43.937142 #54] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:221:in `build_image'
+E, [2015-11-30T10:16:43.937182 #54] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:93:in `create'
+E, [2015-11-30T10:16:43.937209 #54] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-11-30T10:16:43.937231 #54] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-11-30T10:16:43.937252 #54] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-11-30T10:16:43.937274 #54] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-11-30T10:16:43.937295 #54] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-11-30T10:16:43.937320 #54] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-11-30T10:16:43.937340 #54] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-11-30T10:16:43.937393 #54] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-11-30T10:16:43.937416 #54] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-11-30T10:16:43.937438 #54] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-11-30T10:16:43.937458 #54] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-11-30T10:16:43.937479 #54] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-11-30T10:16:43.937501 #54] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-11-30T10:16:43.937523 #54] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-11-30T10:16:43.937544 #54] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-11-30T10:16:43.937565 #54] ERROR -- Kitchen: ----------------------
+I, [2015-11-30T10:30:07.351169 #112]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-30T10:30:07.403750 #112]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+E, [2015-11-30T10:30:10.450184 #112] ERROR -- Kitchen: ------Exception-------
+E, [2015-11-30T10:30:10.450322 #112] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-11-30T10:30:10.450386 #112] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1]
+E, [2015-11-30T10:30:10.450436 #112] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-11-30T10:30:10.450479 #112] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-11-30T10:30:10.450519 #112] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1
+E, [2015-11-30T10:30:10.450560 #112] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-11-30T10:30:10.450626 #112] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-11-30T10:30:10.450675 #112] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-11-30T10:30:10.450827 #112] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-11-30T10:30:10.450870 #112] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:138:in `docker_command'
+E, [2015-11-30T10:30:10.450906 #112] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:221:in `build_image'
+E, [2015-11-30T10:30:10.450941 #112] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:93:in `create'
+E, [2015-11-30T10:30:10.450976 #112] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-11-30T10:30:10.451034 #112] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-11-30T10:30:10.451078 #112] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-11-30T10:30:10.451115 #112] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-11-30T10:30:10.451150 #112] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-11-30T10:30:10.451185 #112] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-11-30T10:30:10.451220 #112] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-11-30T10:30:10.451255 #112] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-11-30T10:30:10.451290 #112] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-11-30T10:30:10.451325 #112] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-11-30T10:30:10.451360 #112] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-11-30T10:30:10.451395 #112] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-11-30T10:30:10.451431 #112] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-11-30T10:30:10.451466 #112] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-11-30T10:30:10.451500 #112] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-11-30T10:30:10.451630 #112] ERROR -- Kitchen: ----------------------
+I, [2015-11-30T10:30:47.299618 #134]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-30T10:30:47.355057 #134]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+E, [2015-11-30T10:30:47.389514 #134] ERROR -- Kitchen: ------Exception-------
+E, [2015-11-30T10:30:47.389620 #134] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-11-30T10:30:47.389669 #134] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '2'
+---- Begin output of docker -H tcp://172.17.0.1 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.0.1 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.0.1 build --no-cache - 2>/dev/null returned 2]
+E, [2015-11-30T10:30:47.389726 #134] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-11-30T10:30:47.389768 #134] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-11-30T10:30:47.389808 #134] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '2'
+---- Begin output of docker -H tcp://172.17.0.1 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.0.1 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.0.1 build --no-cache - 2>/dev/null returned 2
+E, [2015-11-30T10:30:47.389850 #134] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-11-30T10:30:47.389891 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-11-30T10:30:47.389933 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-11-30T10:30:47.389971 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-11-30T10:30:47.390010 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:138:in `docker_command'
+E, [2015-11-30T10:30:47.390046 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:221:in `build_image'
+E, [2015-11-30T10:30:47.390082 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:93:in `create'
+E, [2015-11-30T10:30:47.390119 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-11-30T10:30:47.390155 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-11-30T10:30:47.390191 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-11-30T10:30:47.390383 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-11-30T10:30:47.390425 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-11-30T10:30:47.390462 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-11-30T10:30:47.390498 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-11-30T10:30:47.390534 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-11-30T10:30:47.390570 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-11-30T10:30:47.390606 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-11-30T10:30:47.390642 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-11-30T10:30:47.390678 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-11-30T10:30:47.390714 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-11-30T10:30:47.390750 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-11-30T10:30:47.390795 #134] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-11-30T10:30:47.390835 #134] ERROR -- Kitchen: ----------------------
+I, [2015-11-30T10:32:13.209373 #168]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-30T10:32:13.263161 #168]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+I, [2015-11-30T10:32:36.009165 #168]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+E, [2015-11-30T10:33:49.697426 #168] ERROR -- Kitchen: Converge failed on instance <completa-prefapp>.
+I, [2015-11-30T10:35:30.172961 #208]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-30T10:35:30.233950 #208]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+I, [2015-11-30T10:42:44.155171 #208]  INFO -- Kitchen: -----> Kitchen is finished. (7m13.98s)
+I, [2015-11-30T11:24:58.894411 #244]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-30T11:24:58.956331 #244]  INFO -- Kitchen: -----> Creating <default-prefapp>...
+E, [2015-11-30T11:25:02.003479 #244] ERROR -- Kitchen: ------Exception-------
+E, [2015-11-30T11:25:02.003627 #244] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-11-30T11:25:02.003685 #244] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1]
+E, [2015-11-30T11:25:02.003735 #244] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-11-30T11:25:02.003989 #244] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-11-30T11:25:02.004040 #244] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1
+E, [2015-11-30T11:25:02.004086 #244] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-11-30T11:25:02.004187 #244] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-11-30T11:25:02.004237 #244] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-11-30T11:25:02.004281 #244] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-11-30T11:25:02.004324 #244] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:138:in `docker_command'
+E, [2015-11-30T11:25:02.004371 #244] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:221:in `build_image'
+E, [2015-11-30T11:25:02.004414 #244] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:93:in `create'
+E, [2015-11-30T11:25:02.004456 #244] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-11-30T11:25:02.004498 #244] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-11-30T11:25:02.004540 #244] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-11-30T11:25:02.004582 #244] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-11-30T11:25:02.004624 #244] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-11-30T11:25:02.004712 #244] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-11-30T11:25:02.004764 #244] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-11-30T11:25:02.004808 #244] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-11-30T11:25:02.004851 #244] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-11-30T11:25:02.004893 #244] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-11-30T11:25:02.004935 #244] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-11-30T11:25:02.005048 #244] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-11-30T11:25:02.005090 #244] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-11-30T11:25:02.005132 #244] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-11-30T11:25:02.005174 #244] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-11-30T11:25:02.005215 #244] ERROR -- Kitchen: ----------------------
+I, [2015-11-30T11:25:38.855879 #266]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-30T11:25:38.915880 #266]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+I, [2015-11-30T11:28:36.039938 #266]  INFO -- Kitchen: -----> Kitchen is finished. (2m57.18s)
+E, [2015-11-30T11:29:23.207700 #278] ERROR -- Kitchen: 
+Argument `' returned multiple results:
+  * default-prefapp
+  * completa-prefapp
+
+
+I, [2015-11-30T12:17:14.978572 #300]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-30T12:17:15.043998 #300]  INFO -- Kitchen: -----> Destroying <default-prefapp>...
+I, [2015-11-30T12:17:15.047933 #300]  INFO -- Kitchen: -----> Destroying <completa-prefapp>...
+I, [2015-11-30T12:17:21.086456 #300]  INFO -- Kitchen: -----> Kitchen is finished. (0m6.11s)
+I, [2015-11-30T12:18:30.989428 #322]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-30T12:18:31.044467 #322]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+E, [2015-11-30T12:18:34.085453 #322] ERROR -- Kitchen: ------Exception-------
+E, [2015-11-30T12:18:34.085527 #322] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-11-30T12:18:34.085556 #322] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1]
+E, [2015-11-30T12:18:34.085579 #322] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-11-30T12:18:34.085599 #322] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-11-30T12:18:34.085617 #322] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1
+E, [2015-11-30T12:18:34.085636 #322] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-11-30T12:18:34.085654 #322] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-11-30T12:18:34.085694 #322] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-11-30T12:18:34.085720 #322] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-11-30T12:18:34.085739 #322] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:138:in `docker_command'
+E, [2015-11-30T12:18:34.085757 #322] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:221:in `build_image'
+E, [2015-11-30T12:18:34.085774 #322] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:93:in `create'
+E, [2015-11-30T12:18:34.085792 #322] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-11-30T12:18:34.085809 #322] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-11-30T12:18:34.085837 #322] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-11-30T12:18:34.085856 #322] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-11-30T12:18:34.085873 #322] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-11-30T12:18:34.085890 #322] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-11-30T12:18:34.085907 #322] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-11-30T12:18:34.085924 #322] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-11-30T12:18:34.085942 #322] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-11-30T12:18:34.085959 #322] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-11-30T12:18:34.086048 #322] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-11-30T12:18:34.086067 #322] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-11-30T12:18:34.086085 #322] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-11-30T12:18:34.086102 #322] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-11-30T12:18:34.086127 #322] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-11-30T12:18:34.086145 #322] ERROR -- Kitchen: ----------------------
+I, [2015-11-30T12:18:42.397240 #343]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-30T12:18:42.450357 #343]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+E, [2015-11-30T12:18:45.496486 #343] ERROR -- Kitchen: ------Exception-------
+E, [2015-11-30T12:18:45.496681 #343] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-11-30T12:18:45.496719 #343] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1]
+E, [2015-11-30T12:18:45.496759 #343] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-11-30T12:18:45.496788 #343] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-11-30T12:18:45.496811 #343] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1
+E, [2015-11-30T12:18:45.496834 #343] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-11-30T12:18:45.496855 #343] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-11-30T12:18:45.496878 #343] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-11-30T12:18:45.496900 #343] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-11-30T12:18:45.496923 #343] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:138:in `docker_command'
+E, [2015-11-30T12:18:45.496993 #343] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:221:in `build_image'
+E, [2015-11-30T12:18:45.497018 #343] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:93:in `create'
+E, [2015-11-30T12:18:45.497041 #343] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-11-30T12:18:45.497063 #343] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-11-30T12:18:45.497089 #343] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-11-30T12:18:45.497122 #343] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-11-30T12:18:45.497145 #343] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-11-30T12:18:45.497172 #343] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-11-30T12:18:45.497196 #343] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-11-30T12:18:45.497270 #343] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-11-30T12:18:45.497294 #343] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-11-30T12:18:45.497316 #343] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-11-30T12:18:45.497337 #343] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-11-30T12:18:45.497358 #343] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-11-30T12:18:45.497378 #343] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-11-30T12:18:45.497400 #343] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-11-30T12:18:45.497421 #343] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-11-30T12:18:45.497451 #343] ERROR -- Kitchen: ----------------------
+I, [2015-11-30T12:18:51.877192 #364]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-30T12:18:51.929015 #364]  INFO -- Kitchen: -----> Creating <default-prefapp>...
+E, [2015-11-30T12:18:54.976895 #364] ERROR -- Kitchen: ------Exception-------
+E, [2015-11-30T12:18:54.976984 #364] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-11-30T12:18:54.977026 #364] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1]
+E, [2015-11-30T12:18:54.977059 #364] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-11-30T12:18:54.977291 #364] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-11-30T12:18:54.977323 #364] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1
+E, [2015-11-30T12:18:54.977354 #364] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-11-30T12:18:54.977406 #364] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-11-30T12:18:54.977478 #364] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-11-30T12:18:54.977515 #364] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-11-30T12:18:54.977544 #364] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:138:in `docker_command'
+E, [2015-11-30T12:18:54.977571 #364] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:221:in `build_image'
+E, [2015-11-30T12:18:54.977598 #364] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:93:in `create'
+E, [2015-11-30T12:18:54.977625 #364] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-11-30T12:18:54.977652 #364] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-11-30T12:18:54.977679 #364] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-11-30T12:18:54.977706 #364] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-11-30T12:18:54.977734 #364] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-11-30T12:18:54.977771 #364] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-11-30T12:18:54.977808 #364] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-11-30T12:18:54.977838 #364] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-11-30T12:18:54.977866 #364] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-11-30T12:18:54.977893 #364] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-11-30T12:18:54.978003 #364] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-11-30T12:18:54.978041 #364] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-11-30T12:18:54.978071 #364] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-11-30T12:18:54.978098 #364] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-11-30T12:18:54.978125 #364] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-11-30T12:18:54.978153 #364] ERROR -- Kitchen: ----------------------
+I, [2015-11-30T12:19:05.014153 #385]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-30T12:19:05.068204 #385]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+E, [2015-11-30T12:19:08.111059 #385] ERROR -- Kitchen: ------Exception-------
+E, [2015-11-30T12:19:08.111342 #385] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-11-30T12:19:08.111412 #385] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1]
+E, [2015-11-30T12:19:08.111469 #385] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-11-30T12:19:08.111517 #385] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-11-30T12:19:08.111563 #385] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1
+E, [2015-11-30T12:19:08.111615 #385] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-11-30T12:19:08.111661 #385] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-11-30T12:19:08.111709 #385] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-11-30T12:19:08.111756 #385] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-11-30T12:19:08.111803 #385] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:138:in `docker_command'
+E, [2015-11-30T12:19:08.111849 #385] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:221:in `build_image'
+E, [2015-11-30T12:19:08.111896 #385] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:93:in `create'
+E, [2015-11-30T12:19:08.111942 #385] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-11-30T12:19:08.111989 #385] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-11-30T12:19:08.112036 #385] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-11-30T12:19:08.112082 #385] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-11-30T12:19:08.112478 #385] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-11-30T12:19:08.112566 #385] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-11-30T12:19:08.112617 #385] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-11-30T12:19:08.112665 #385] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-11-30T12:19:08.112795 #385] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-11-30T12:19:08.112846 #385] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-11-30T12:19:08.112891 #385] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-11-30T12:19:08.112937 #385] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-11-30T12:19:08.112983 #385] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-11-30T12:19:08.113028 #385] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-11-30T12:19:08.113073 #385] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-11-30T12:19:08.113119 #385] ERROR -- Kitchen: ----------------------
+I, [2015-11-30T12:19:30.020931 #412]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-30T12:19:30.076855 #412]  INFO -- Kitchen: -----> Creating <default-prefapp>...
+E, [2015-11-30T12:19:33.118618 #412] ERROR -- Kitchen: ------Exception-------
+E, [2015-11-30T12:19:33.118731 #412] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-11-30T12:19:33.118961 #412] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1]
+E, [2015-11-30T12:19:33.119033 #412] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-11-30T12:19:33.119079 #412] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-11-30T12:19:33.119118 #412] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1
+E, [2015-11-30T12:19:33.119157 #412] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-11-30T12:19:33.119192 #412] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-11-30T12:19:33.119229 #412] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-11-30T12:19:33.119265 #412] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-11-30T12:19:33.119309 #412] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:138:in `docker_command'
+E, [2015-11-30T12:19:33.119382 #412] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:221:in `build_image'
+E, [2015-11-30T12:19:33.119466 #412] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:93:in `create'
+E, [2015-11-30T12:19:33.119512 #412] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-11-30T12:19:33.119549 #412] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-11-30T12:19:33.119584 #412] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-11-30T12:19:33.119619 #412] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-11-30T12:19:33.119654 #412] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-11-30T12:19:33.119690 #412] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-11-30T12:19:33.119725 #412] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-11-30T12:19:33.119761 #412] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-11-30T12:19:33.119863 #412] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-11-30T12:19:33.119906 #412] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-11-30T12:19:33.119941 #412] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-11-30T12:19:33.119976 #412] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-11-30T12:19:33.120011 #412] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-11-30T12:19:33.120045 #412] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-11-30T12:19:33.120080 #412] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-11-30T12:19:33.120177 #412] ERROR -- Kitchen: ----------------------
+I, [2015-11-30T12:21:57.518174 #444]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-30T12:21:57.573943 #444]  INFO -- Kitchen: -----> Creating <default-prefapp>...
+E, [2015-11-30T12:22:00.616088 #444] ERROR -- Kitchen: ------Exception-------
+E, [2015-11-30T12:22:00.616172 #444] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-11-30T12:22:00.616200 #444] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1]
+E, [2015-11-30T12:22:00.616304 #444] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-11-30T12:22:00.616328 #444] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-11-30T12:22:00.616349 #444] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1
+E, [2015-11-30T12:22:00.616369 #444] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-11-30T12:22:00.616410 #444] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-11-30T12:22:00.616437 #444] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-11-30T12:22:00.616458 #444] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-11-30T12:22:00.616477 #444] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:138:in `docker_command'
+E, [2015-11-30T12:22:00.616495 #444] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:221:in `build_image'
+E, [2015-11-30T12:22:00.616514 #444] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:93:in `create'
+E, [2015-11-30T12:22:00.616533 #444] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-11-30T12:22:00.616552 #444] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-11-30T12:22:00.616571 #444] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-11-30T12:22:00.616590 #444] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-11-30T12:22:00.616609 #444] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-11-30T12:22:00.616628 #444] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-11-30T12:22:00.616647 #444] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-11-30T12:22:00.616666 #444] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-11-30T12:22:00.616685 #444] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-11-30T12:22:00.616703 #444] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-11-30T12:22:00.616769 #444] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-11-30T12:22:00.616788 #444] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-11-30T12:22:00.616807 #444] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-11-30T12:22:00.616825 #444] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-11-30T12:22:00.616844 #444] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-11-30T12:22:00.616863 #444] ERROR -- Kitchen: ----------------------
+I, [2015-11-30T12:25:58.043664 #472]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-30T12:25:58.103344 #472]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+E, [2015-11-30T12:26:01.144911 #472] ERROR -- Kitchen: ------Exception-------
+E, [2015-11-30T12:26:01.144977 #472] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-11-30T12:26:01.145024 #472] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1]
+E, [2015-11-30T12:26:01.145083 #472] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-11-30T12:26:01.145113 #472] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-11-30T12:26:01.145132 #472] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+STDOUT: 
+STDERR: 
+---- End output of docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null ----
+Ran docker -H tcp://172.17.42.1:4243 build --no-cache - 2>/dev/null returned 1
+E, [2015-11-30T12:26:01.145151 #472] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-11-30T12:26:01.145169 #472] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-11-30T12:26:01.145187 #472] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-11-30T12:26:01.145209 #472] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-11-30T12:26:01.145237 #472] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:138:in `docker_command'
+E, [2015-11-30T12:26:01.145255 #472] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:221:in `build_image'
+E, [2015-11-30T12:26:01.145340 #472] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/kitchen-docker-1.6.4/lib/kitchen/driver/docker.rb:93:in `create'
+E, [2015-11-30T12:26:01.145360 #472] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-11-30T12:26:01.145378 #472] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-11-30T12:26:01.145408 #472] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-11-30T12:26:01.145428 #472] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-11-30T12:26:01.145473 #472] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-11-30T12:26:01.145508 #472] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-11-30T12:26:01.145537 #472] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-11-30T12:26:01.145555 #472] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-11-30T12:26:01.145575 #472] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-11-30T12:26:01.145593 #472] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-11-30T12:26:01.145621 #472] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-11-30T12:26:01.145652 #472] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-11-30T12:26:01.145683 #472] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-11-30T12:26:01.145707 #472] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-11-30T12:26:01.145741 #472] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-11-30T12:26:01.145776 #472] ERROR -- Kitchen: ----------------------
+I, [2015-11-30T12:27:06.242120 #497]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-11-30T12:27:06.298735 #497]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+I, [2015-11-30T12:27:39.419594 #497]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+I, [2015-11-30T12:35:58.179761 #497]  INFO -- Kitchen: -----> Kitchen is finished. (8m51.94s)
+I, [2015-12-01T18:16:32.991251 #584]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-01T18:16:33.145225 #584]  INFO -- Kitchen: -----> Destroying <default-prefapp>...
+I, [2015-12-01T18:16:33.148870 #584]  INFO -- Kitchen: -----> Destroying <completa-prefapp>...
+I, [2015-12-01T18:16:40.753754 #584]  INFO -- Kitchen: -----> Kitchen is finished. (0m7.76s)
+I, [2015-12-01T18:18:12.341742 #624]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-01T18:18:12.408343 #624]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+I, [2015-12-01T18:18:40.267498 #624]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+I, [2015-12-01T18:25:15.626543 #624]  INFO -- Kitchen: -----> Kitchen is finished. (7m3.28s)
+I, [2015-12-01T18:28:21.424131 #673]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-01T18:28:21.485295 #673]  INFO -- Kitchen: -----> Creating <default-prefapp>...
+I, [2015-12-01T18:28:30.830872 #694]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-01T18:28:30.889051 #694]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+I, [2015-12-01T18:29:31.957318 #694]  INFO -- Kitchen: -----> Kitchen is finished. (1m1.13s)
+I, [2015-12-01T18:39:45.014450 #717]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-01T18:39:45.088668 #717]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+I, [2015-12-01T18:40:40.485224 #717]  INFO -- Kitchen: -----> Kitchen is finished. (0m55.47s)
+I, [2015-12-01T18:43:17.013223 #740]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-01T18:43:17.070178 #740]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+I, [2015-12-01T18:44:12.463172 #740]  INFO -- Kitchen: -----> Kitchen is finished. (0m55.45s)
+I, [2015-12-01T18:46:11.348190 #763]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-01T18:46:11.412541 #763]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+I, [2015-12-01T18:48:02.667682 #763]  INFO -- Kitchen: -----> Kitchen is finished. (1m51.32s)
+I, [2015-12-03T18:26:33.885479 #124]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-03T18:26:33.944310 #124]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+E, [2015-12-03T18:26:35.984098 #124] ERROR -- Kitchen: ------Exception-------
+E, [2015-12-03T18:26:35.984207 #124] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-12-03T18:26:35.984242 #124] ERROR -- Kitchen: Message: Failed to complete #converge action: [Connection refused - connect(2) for "172.17.0.1" port 32779]
+E, [2015-12-03T18:26:35.984270 #124] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-12-03T18:26:35.984293 #124] ERROR -- Kitchen: Class: Errno::ECONNREFUSED
+E, [2015-12-03T18:26:35.984316 #124] ERROR -- Kitchen: Message: Connection refused - connect(2) for "172.17.0.1" port 32779
+E, [2015-12-03T18:26:35.984339 #124] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-12-03T18:26:35.984361 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:70:in `initialize'
+E, [2015-12-03T18:26:35.984384 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:70:in `open'
+E, [2015-12-03T18:26:35.984407 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:70:in `block in initialize'
+E, [2015-12-03T18:26:35.984429 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/timeout.rb:76:in `timeout'
+E, [2015-12-03T18:26:35.984462 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/timeout.rb:127:in `timeout'
+E, [2015-12-03T18:26:35.984488 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:67:in `initialize'
+E, [2015-12-03T18:26:35.984511 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh.rb:207:in `new'
+E, [2015-12-03T18:26:35.984533 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh.rb:207:in `start'
+E, [2015-12-03T18:26:35.984593 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:201:in `establish_connection'
+E, [2015-12-03T18:26:35.984625 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:184:in `session'
+E, [2015-12-03T18:26:35.984650 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:236:in `exec_with_exit'
+E, [2015-12-03T18:26:35.984672 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:81:in `exec'
+E, [2015-12-03T18:26:35.984693 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:150:in `run_remote'
+E, [2015-12-03T18:26:35.984715 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:47:in `block in converge'
+E, [2015-12-03T18:26:35.984736 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-12-03T18:26:35.984758 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `new'
+E, [2015-12-03T18:26:35.984800 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `converge'
+E, [2015-12-03T18:26:35.984845 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-12-03T18:26:35.984871 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-12-03T18:26:35.984989 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-12-03T18:26:35.985017 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-12-03T18:26:35.985040 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-12-03T18:26:35.985061 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-12-03T18:26:35.985081 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-12-03T18:26:35.985102 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-12-03T18:26:35.985123 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-12-03T18:26:35.985144 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-12-03T18:26:35.985164 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-12-03T18:26:35.985185 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-12-03T18:26:35.985206 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-12-03T18:26:35.985237 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-12-03T18:26:35.985262 #124] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-12-03T18:26:35.985284 #124] ERROR -- Kitchen: ----------------------
+I, [2015-12-03T18:26:43.700255 #136]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-03T18:26:43.755897 #136]  INFO -- Kitchen: -----> Destroying <default-prefapp>...
+I, [2015-12-03T18:26:43.760817 #136]  INFO -- Kitchen: -----> Destroying <completa-prefapp>...
+I, [2015-12-03T18:26:43.802842 #136]  INFO -- Kitchen: -----> Kitchen is finished. (0m0.10s)
+I, [2015-12-03T18:26:45.382089 #157]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-03T18:26:45.441052 #157]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+I, [2015-12-03T18:27:16.513395 #157]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+E, [2015-12-03T18:34:33.446535 #157] ERROR -- Kitchen: Converge failed on instance <completa-prefapp>.
+I, [2015-12-03T18:48:31.014610 #218]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-03T18:48:31.074213 #218]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+I, [2015-12-03T18:49:43.336947 #218]  INFO -- Kitchen: -----> Kitchen is finished. (1m12.32s)
+I, [2015-12-03T19:02:18.676533 #242]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-03T19:02:18.736360 #242]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+I, [2015-12-03T19:03:26.190078 #242]  INFO -- Kitchen: -----> Kitchen is finished. (1m7.51s)
+I, [2015-12-09T16:40:26.016901 #45]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-09T16:40:26.074956 #45]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+E, [2015-12-09T16:43:33.260078 #45] ERROR -- Kitchen: Converge failed on instance <completa-prefapp>.
+E, [2015-12-09T16:44:30.174014 #63] ERROR -- Kitchen: 
+Argument `' returned multiple results:
+  * default-prefapp
+  * completa-prefapp
+
+
+I, [2015-12-09T16:47:26.379294 #85]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-09T16:47:26.448021 #85]  INFO -- Kitchen: -----> Destroying <completa-prefapp>...
+I, [2015-12-09T16:47:31.557476 #85]  INFO -- Kitchen: -----> Kitchen is finished. (0m5.18s)
+I, [2015-12-09T16:50:23.118717 #151]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-09T16:50:23.179027 #151]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+I, [2015-12-09T16:50:50.729979 #151]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+I, [2015-12-09T16:57:39.484436 #151]  INFO -- Kitchen: -----> Kitchen is finished. (7m16.37s)
+I, [2015-12-09T17:00:49.114990 #204]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-09T17:00:49.177749 #204]  INFO -- Kitchen: -----> Destroying <completa-prefapp>...
+I, [2015-12-09T17:00:54.386005 #204]  INFO -- Kitchen: -----> Kitchen is finished. (0m5.27s)
+E, [2015-12-09T17:52:49.404400 #264] ERROR -- Kitchen: 
+No instances for regex `compelta', try running `kitchen list'
+
+
+E, [2015-12-09T17:52:54.112050 #275] ERROR -- Kitchen: ------Exception-------
+E, [2015-12-09T17:52:54.112197 #275] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2015-12-09T17:52:54.112229 #275] ERROR -- Kitchen: Message: Instance <completa-prefapp> has not yet been created
+E, [2015-12-09T17:52:54.112250 #275] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-12-09T17:52:54.112270 #275] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:201:in `login'
+E, [2015-12-09T17:52:54.112289 #275] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command/login.rb:39:in `call'
+E, [2015-12-09T17:52:54.112308 #275] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/cli.rb:56:in `perform'
+E, [2015-12-09T17:52:54.112338 #275] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/cli.rb:218:in `login'
+E, [2015-12-09T17:52:54.112359 #275] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-12-09T17:52:54.112405 #275] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-12-09T17:52:54.112425 #275] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/cli.rb:304:in `invoke_task'
+E, [2015-12-09T17:52:54.112443 #275] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-12-09T17:52:54.112463 #275] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-12-09T17:52:54.112482 #275] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-12-09T17:52:54.112500 #275] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/errors.rb:154:in `with_friendly_errors'
+E, [2015-12-09T17:52:54.112517 #275] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/bin/kitchen:13:in `<top (required)>'
+E, [2015-12-09T17:52:54.112535 #275] ERROR -- Kitchen: /bin/kitchen:23:in `load'
+E, [2015-12-09T17:52:54.112552 #275] ERROR -- Kitchen: /bin/kitchen:23:in `<main>'
+E, [2015-12-09T17:52:54.112570 #275] ERROR -- Kitchen: ----------------------
+I, [2015-12-09T18:32:23.880348 #302]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-09T18:32:23.941656 #302]  INFO -- Kitchen: -----> Creating <default-prefapp>...
+I, [2015-12-09T18:32:30.642828 #321]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-09T18:32:30.700789 #321]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+I, [2015-12-09T18:32:55.017229 #321]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+I, [2015-12-09T18:39:47.610501 #321]  INFO -- Kitchen: -----> Kitchen is finished. (7m16.97s)
+E, [2015-12-09T18:40:10.538318 #359] ERROR -- Kitchen: 
+Argument `' returned multiple results:
+  * default-prefapp
+  * completa-prefapp
+
+
+I, [2015-12-09T18:48:27.636152 #381]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-09T18:48:27.699867 #381]  INFO -- Kitchen: -----> Destroying <completa-prefapp>...
+I, [2015-12-09T18:48:30.413883 #381]  INFO -- Kitchen: -----> Kitchen is finished. (0m2.78s)
+I, [2015-12-09T18:48:36.390846 #420]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-09T18:48:36.450843 #420]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+I, [2015-12-09T18:50:13.953082 #420]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+I, [2015-12-09T18:57:18.868538 #420]  INFO -- Kitchen: -----> Kitchen is finished. (8m42.48s)
+I, [2015-12-09T19:00:57.752256 #471]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-09T19:00:57.820596 #471]  INFO -- Kitchen: -----> Destroying <completa-prefapp>...
+I, [2015-12-09T19:01:00.728765 #471]  INFO -- Kitchen: -----> Kitchen is finished. (0m2.97s)
+I, [2015-12-09T19:02:07.001932 #521]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-09T19:02:07.060611 #521]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+I, [2015-12-09T19:02:33.103834 #521]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+I, [2015-12-09T19:09:40.002093 #521]  INFO -- Kitchen: -----> Kitchen is finished. (7m33.00s)
+I, [2015-12-09T19:12:13.542614 #570]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-09T19:12:13.603033 #570]  INFO -- Kitchen: -----> Destroying <completa-prefapp>...
+I, [2015-12-09T19:12:16.675313 #570]  INFO -- Kitchen: -----> Kitchen is finished. (0m3.13s)
+I, [2015-12-10T10:06:57.915137 #624]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-10T10:06:58.215438 #624]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+I, [2015-12-10T10:07:24.898318 #624]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+E, [2015-12-10T10:07:29.685727 #624] ERROR -- Kitchen: Converge failed on instance <completa-prefapp>.
+I, [2015-12-10T10:08:16.317318 #663]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-10T10:08:16.381395 #663]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+I, [2015-12-10T10:15:08.198447 #663]  INFO -- Kitchen: -----> Kitchen is finished. (6m51.88s)
+I, [2015-12-10T10:17:25.867661 #695]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-10T10:17:25.930257 #695]  INFO -- Kitchen: -----> Destroying <completa-prefapp>...
+I, [2015-12-10T10:17:30.887410 #695]  INFO -- Kitchen: -----> Kitchen is finished. (0m5.02s)
+I, [2015-12-10T10:45:19.805581 #754]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-10T10:45:19.870692 #754]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+I, [2015-12-10T10:45:42.043303 #754]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+I, [2015-12-10T10:52:05.628367 #754]  INFO -- Kitchen: -----> Kitchen is finished. (6m45.82s)
+I, [2015-12-16T17:27:57.953241 #888]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-16T17:27:58.194417 #888]  INFO -- Kitchen: -----> Creating <default-prefapp>...
+I, [2015-12-16T17:29:24.003806 #888]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+E, [2015-12-16T17:34:23.197949 #888] ERROR -- Kitchen: Converge failed on instance <default-prefapp>.
+I, [2015-12-30T18:45:29.672924 #3556]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-30T18:45:29.983258 #3556]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+E, [2015-12-30T18:45:30.314805 #3556] ERROR -- Kitchen: ------Exception-------
+E, [2015-12-30T18:45:30.314922 #3556] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-12-30T18:45:30.314977 #3556] ERROR -- Kitchen: Message: Failed to complete #converge action: [scp: /tmp/kitchen/cookbooks: No space left on device
+]
+E, [2015-12-30T18:45:30.315111 #3556] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-12-30T18:45:30.315160 #3556] ERROR -- Kitchen: Class: RuntimeError
+E, [2015-12-30T18:45:30.315199 #3556] ERROR -- Kitchen: Message: scp: /tmp/kitchen/cookbooks: No space left on device
+
+E, [2015-12-30T18:45:30.315238 #3556] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-12-30T18:45:30.315333 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-scp-1.2.1/lib/net/scp.rb:398:in `await_response_state'
+E, [2015-12-30T18:45:30.315374 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-scp-1.2.1/lib/net/scp.rb:369:in `block (3 levels) in start_command'
+E, [2015-12-30T18:45:30.315413 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/connection/channel.rb:311:in `call'
+E, [2015-12-30T18:45:30.315451 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/connection/channel.rb:311:in `process'
+E, [2015-12-30T18:45:30.315499 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/connection/session.rb:223:in `block in preprocess'
+E, [2015-12-30T18:45:30.315530 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/connection/session.rb:223:in `each'
+E, [2015-12-30T18:45:30.315558 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/connection/session.rb:223:in `preprocess'
+E, [2015-12-30T18:45:30.315588 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/connection/session.rb:206:in `process'
+E, [2015-12-30T18:45:30.315618 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/connection/session.rb:170:in `block in loop'
+E, [2015-12-30T18:45:30.315647 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/connection/session.rb:170:in `loop'
+E, [2015-12-30T18:45:30.315677 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/connection/session.rb:170:in `loop'
+E, [2015-12-30T18:45:30.315719 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/connection/channel.rb:269:in `wait'
+E, [2015-12-30T18:45:30.315753 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-scp-1.2.1/lib/net/scp.rb:284:in `upload!'
+E, [2015-12-30T18:45:30.315783 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:104:in `upload!'
+E, [2015-12-30T18:45:30.315812 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:118:in `upload_path!'
+E, [2015-12-30T18:45:30.315841 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:166:in `block in transfer_path'
+E, [2015-12-30T18:45:30.315869 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:166:in `each'
+E, [2015-12-30T18:45:30.315934 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:166:in `transfer_path'
+E, [2015-12-30T18:45:30.315963 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:48:in `block in converge'
+E, [2015-12-30T18:45:30.315990 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-12-30T18:45:30.316018 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `new'
+E, [2015-12-30T18:45:30.316046 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `converge'
+E, [2015-12-30T18:45:30.316074 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-12-30T18:45:30.316138 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-12-30T18:45:30.316187 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-12-30T18:45:30.316217 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-12-30T18:45:30.316246 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-12-30T18:45:30.316274 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-12-30T18:45:30.316302 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-12-30T18:45:30.316330 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-12-30T18:45:30.316358 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-12-30T18:45:30.316386 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-12-30T18:45:30.316414 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-12-30T18:45:30.316507 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-12-30T18:45:30.316543 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-12-30T18:45:30.316571 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-12-30T18:45:30.316610 #3556] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-12-30T18:45:30.316642 #3556] ERROR -- Kitchen: ----------------------
+I, [2015-12-30T18:47:12.523015 #3566]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-12-30T18:47:12.609018 #3566]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+E, [2015-12-30T18:48:24.831593 #3566] ERROR -- Kitchen: Converge failed on instance <default-prefapp>.
+I, [2016-01-07T17:09:16.432682 #3602]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2016-01-07T17:09:16.517128 #3602]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+E, [2016-01-07T17:09:18.834582 #3602] ERROR -- Kitchen: Converge failed on instance <default-prefapp>.
+I, [2016-01-07T17:13:59.824205 #3626]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2016-01-07T17:13:59.893048 #3626]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+E, [2016-01-07T17:14:01.597373 #3626] ERROR -- Kitchen: Converge failed on instance <default-prefapp>.
+I, [2016-01-07T17:16:04.118284 #3640]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2016-01-07T17:16:04.180689 #3640]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+E, [2016-01-07T17:16:05.709744 #3640] ERROR -- Kitchen: Converge failed on instance <default-prefapp>.
+I, [2016-01-07T17:23:18.983531 #3656]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2016-01-07T17:23:19.046738 #3656]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+E, [2016-01-07T17:23:20.685474 #3656] ERROR -- Kitchen: Converge failed on instance <default-prefapp>.
+I, [2016-01-07T17:28:27.465690 #3670]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2016-01-07T17:28:27.531180 #3670]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+I, [2016-01-07T17:30:48.390051 #3670]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+E, [2016-01-07T17:30:50.421584 #3670] ERROR -- Kitchen: ------Exception-------
+E, [2016-01-07T17:30:50.421778 #3670] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2016-01-07T17:30:50.421811 #3670] ERROR -- Kitchen: Message: Failed to complete #converge action: [Connection refused - connect(2) for "172.17.0.1" port 32793]
+E, [2016-01-07T17:30:50.421835 #3670] ERROR -- Kitchen: ---Nested Exception---
+E, [2016-01-07T17:30:50.421856 #3670] ERROR -- Kitchen: Class: Errno::ECONNREFUSED
+E, [2016-01-07T17:30:50.421877 #3670] ERROR -- Kitchen: Message: Connection refused - connect(2) for "172.17.0.1" port 32793
+E, [2016-01-07T17:30:50.421975 #3670] ERROR -- Kitchen: ------Backtrace-------
+E, [2016-01-07T17:30:50.422002 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:70:in `initialize'
+E, [2016-01-07T17:30:50.422123 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:70:in `open'
+E, [2016-01-07T17:30:50.422162 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:70:in `block in initialize'
+E, [2016-01-07T17:30:50.422218 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/timeout.rb:76:in `timeout'
+E, [2016-01-07T17:30:50.422248 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/timeout.rb:127:in `timeout'
+E, [2016-01-07T17:30:50.422270 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:67:in `initialize'
+E, [2016-01-07T17:30:50.422432 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh.rb:207:in `new'
+E, [2016-01-07T17:30:50.422468 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh.rb:207:in `start'
+E, [2016-01-07T17:30:50.423247 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:201:in `establish_connection'
+E, [2016-01-07T17:30:50.423352 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:184:in `session'
+E, [2016-01-07T17:30:50.423432 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:236:in `exec_with_exit'
+E, [2016-01-07T17:30:50.423531 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:81:in `exec'
+E, [2016-01-07T17:30:50.423572 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:150:in `run_remote'
+E, [2016-01-07T17:30:50.423596 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:47:in `block in converge'
+E, [2016-01-07T17:30:50.423644 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2016-01-07T17:30:50.423677 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `new'
+E, [2016-01-07T17:30:50.423740 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `converge'
+E, [2016-01-07T17:30:50.423765 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2016-01-07T17:30:50.423785 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2016-01-07T17:30:50.423832 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2016-01-07T17:30:50.423942 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2016-01-07T17:30:50.424002 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2016-01-07T17:30:50.424245 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-01-07T17:30:50.424310 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2016-01-07T17:30:50.424347 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2016-01-07T17:30:50.424384 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2016-01-07T17:30:50.424470 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2016-01-07T17:30:50.424498 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2016-01-07T17:30:50.424559 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2016-01-07T17:30:50.424639 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2016-01-07T17:30:50.424682 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2016-01-07T17:30:50.424707 #3670] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2016-01-07T17:30:50.424731 #3670] ERROR -- Kitchen: ----------------------
+I, [2016-01-07T17:33:19.484755 #3686]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2016-01-07T17:33:19.590074 #3686]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+I, [2016-01-07T17:34:22.950609 #3686]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+E, [2016-01-07T17:34:24.976211 #3686] ERROR -- Kitchen: ------Exception-------
+E, [2016-01-07T17:34:24.976343 #3686] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2016-01-07T17:34:24.976389 #3686] ERROR -- Kitchen: Message: Failed to complete #converge action: [Connection refused - connect(2) for "172.17.0.1" port 32793]
+E, [2016-01-07T17:34:24.976418 #3686] ERROR -- Kitchen: ---Nested Exception---
+E, [2016-01-07T17:34:24.976441 #3686] ERROR -- Kitchen: Class: Errno::ECONNREFUSED
+E, [2016-01-07T17:34:24.976463 #3686] ERROR -- Kitchen: Message: Connection refused - connect(2) for "172.17.0.1" port 32793
+E, [2016-01-07T17:34:24.976509 #3686] ERROR -- Kitchen: ------Backtrace-------
+E, [2016-01-07T17:34:24.976535 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:70:in `initialize'
+E, [2016-01-07T17:34:24.976585 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:70:in `open'
+E, [2016-01-07T17:34:24.976655 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:70:in `block in initialize'
+E, [2016-01-07T17:34:24.976714 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/timeout.rb:76:in `timeout'
+E, [2016-01-07T17:34:24.976739 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/timeout.rb:127:in `timeout'
+E, [2016-01-07T17:34:24.976760 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:67:in `initialize'
+E, [2016-01-07T17:34:24.976809 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh.rb:207:in `new'
+E, [2016-01-07T17:34:24.976909 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh.rb:207:in `start'
+E, [2016-01-07T17:34:24.976938 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:201:in `establish_connection'
+E, [2016-01-07T17:34:24.976967 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:184:in `session'
+E, [2016-01-07T17:34:24.977083 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:236:in `exec_with_exit'
+E, [2016-01-07T17:34:24.977670 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:81:in `exec'
+E, [2016-01-07T17:34:24.977719 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:150:in `run_remote'
+E, [2016-01-07T17:34:24.977784 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:47:in `block in converge'
+E, [2016-01-07T17:34:24.977845 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2016-01-07T17:34:24.978006 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `new'
+E, [2016-01-07T17:34:24.978125 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `converge'
+E, [2016-01-07T17:34:24.978189 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2016-01-07T17:34:24.978275 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2016-01-07T17:34:24.978414 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2016-01-07T17:34:24.978464 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2016-01-07T17:34:24.978512 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2016-01-07T17:34:24.978572 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-01-07T17:34:24.978614 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2016-01-07T17:34:24.978641 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2016-01-07T17:34:24.978692 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2016-01-07T17:34:24.978751 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2016-01-07T17:34:24.978845 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2016-01-07T17:34:24.978886 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2016-01-07T17:34:24.978910 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2016-01-07T17:34:24.978953 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2016-01-07T17:34:24.978987 #3686] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2016-01-07T17:34:24.979041 #3686] ERROR -- Kitchen: ----------------------
+I, [2016-01-07T17:44:28.471344 #3722]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2016-01-07T17:44:28.535914 #3722]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+I, [2016-01-07T17:45:30.251073 #3722]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+E, [2016-01-07T17:45:32.276012 #3722] ERROR -- Kitchen: ------Exception-------
+E, [2016-01-07T17:45:32.276174 #3722] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2016-01-07T17:45:32.276232 #3722] ERROR -- Kitchen: Message: Failed to complete #converge action: [Connection refused - connect(2) for "172.17.0.1" port 32793]
+E, [2016-01-07T17:45:32.276279 #3722] ERROR -- Kitchen: ---Nested Exception---
+E, [2016-01-07T17:45:32.276316 #3722] ERROR -- Kitchen: Class: Errno::ECONNREFUSED
+E, [2016-01-07T17:45:32.276355 #3722] ERROR -- Kitchen: Message: Connection refused - connect(2) for "172.17.0.1" port 32793
+E, [2016-01-07T17:45:32.276387 #3722] ERROR -- Kitchen: ------Backtrace-------
+E, [2016-01-07T17:45:32.276416 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:70:in `initialize'
+E, [2016-01-07T17:45:32.276446 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:70:in `open'
+E, [2016-01-07T17:45:32.276501 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:70:in `block in initialize'
+E, [2016-01-07T17:45:32.276660 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/timeout.rb:76:in `timeout'
+E, [2016-01-07T17:45:32.276698 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/timeout.rb:127:in `timeout'
+E, [2016-01-07T17:45:32.276727 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh/transport/session.rb:67:in `initialize'
+E, [2016-01-07T17:45:32.276757 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh.rb:207:in `new'
+E, [2016-01-07T17:45:32.276786 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/net-ssh-2.9.2/lib/net/ssh.rb:207:in `start'
+E, [2016-01-07T17:45:32.277034 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:201:in `establish_connection'
+E, [2016-01-07T17:45:32.277094 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:184:in `session'
+E, [2016-01-07T17:45:32.277764 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:236:in `exec_with_exit'
+E, [2016-01-07T17:45:32.277921 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:81:in `exec'
+E, [2016-01-07T17:45:32.278004 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:150:in `run_remote'
+E, [2016-01-07T17:45:32.278290 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:47:in `block in converge'
+E, [2016-01-07T17:45:32.278331 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2016-01-07T17:45:32.278379 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `new'
+E, [2016-01-07T17:45:32.278421 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `converge'
+E, [2016-01-07T17:45:32.278574 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2016-01-07T17:45:32.278611 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2016-01-07T17:45:32.278758 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2016-01-07T17:45:32.278819 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2016-01-07T17:45:32.278851 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2016-01-07T17:45:32.278916 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-01-07T17:45:32.278989 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2016-01-07T17:45:32.279070 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2016-01-07T17:45:32.279121 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2016-01-07T17:45:32.279163 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2016-01-07T17:45:32.279208 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2016-01-07T17:45:32.279305 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2016-01-07T17:45:32.279340 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2016-01-07T17:45:32.279391 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2016-01-07T17:45:32.279492 #3722] ERROR -- Kitchen: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2016-01-07T17:45:32.279540 #3722] ERROR -- Kitchen: ----------------------
+I, [2016-01-07T17:49:59.957208 #3849]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2016-01-07T17:50:00.012624 #3849]  INFO -- Kitchen: -----> Destroying <default-prefapp>...
+I, [2016-01-07T17:50:07.135746 #3849]  INFO -- Kitchen: -----> Destroying <completa-prefapp>...
+I, [2016-01-07T17:50:07.174816 #3849]  INFO -- Kitchen: -----> Kitchen is finished. (0m7.22s)
+I, [2016-01-07T17:50:10.053096 #3897]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2016-01-07T17:50:10.107944 #3897]  INFO -- Kitchen: -----> Destroying <default-prefapp>...
+I, [2016-01-07T17:50:10.109911 #3897]  INFO -- Kitchen: -----> Destroying <completa-prefapp>...
+I, [2016-01-07T17:50:10.111110 #3897]  INFO -- Kitchen: -----> Kitchen is finished. (0m0.06s)
+I, [2016-01-07T17:50:16.856251 #3909]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2016-01-07T17:50:16.912257 #3909]  INFO -- Kitchen: -----> Creating <default-prefapp>...
+I, [2016-01-07T17:50:39.167709 #3909]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+I, [2016-01-07T17:56:46.247984 #3909]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+I, [2016-01-07T17:57:25.739080 #3909]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+E, [2016-01-07T17:59:58.434940 #3909] ERROR -- Kitchen: Converge failed on instance <completa-prefapp>.
+I, [2016-01-07T18:07:07.552487 #3989]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2016-01-07T18:07:07.650260 #3989]  INFO -- Kitchen: -----> Destroying <default-prefapp>...
+I, [2016-01-07T18:07:16.944455 #3989]  INFO -- Kitchen: -----> Destroying <completa-prefapp>...
+I, [2016-01-07T18:07:19.118133 #3989]  INFO -- Kitchen: -----> Kitchen is finished. (0m11.56s)
+I, [2016-01-07T18:07:24.794466 #4055]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2016-01-07T18:07:24.867524 #4055]  INFO -- Kitchen: -----> Creating <default-prefapp>...
+I, [2016-01-07T18:07:47.106851 #4055]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+I, [2016-01-07T18:15:22.913635 #4055]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+I, [2016-01-07T18:16:00.604938 #4055]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+I, [2016-01-07T18:24:29.885469 #4055]  INFO -- Kitchen: -----> Kitchen is finished. (17m5.08s)
+E, [2016-01-07T18:53:50.131401 #4121] ERROR -- Kitchen: 
+Argument `' returned multiple results:
+  * default-prefapp
+  * completa-prefapp
+
+
+I, [2016-01-11T16:18:40.694964 #4221]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2016-01-11T16:18:40.763100 #4221]  INFO -- Kitchen: -----> Destroying <default-prefapp>...
+I, [2016-01-11T16:19:02.011829 #4221]  INFO -- Kitchen: -----> Destroying <completa-prefapp>...
+I, [2016-01-11T16:19:12.460611 #4221]  INFO -- Kitchen: -----> Kitchen is finished. (0m31.76s)
+I, [2016-01-11T16:21:23.746501 #4287]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2016-01-11T16:21:23.832531 #4287]  INFO -- Kitchen: -----> Creating <default-prefapp>...
+I, [2016-01-11T16:21:50.633916 #4287]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+I, [2016-01-11T16:27:24.554300 #4287]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+I, [2016-01-11T16:27:58.651869 #4287]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+E, [2016-01-11T16:31:17.393131 #4287] ERROR -- Kitchen: Converge failed on instance <completa-prefapp>.
+I, [2016-01-11T16:49:30.554031 #4358]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2016-01-11T16:49:30.631501 #4358]  INFO -- Kitchen: -----> Destroying <default-prefapp>...
+I, [2016-01-11T16:49:40.381003 #4358]  INFO -- Kitchen: -----> Destroying <completa-prefapp>...
+I, [2016-01-11T16:49:44.985975 #4358]  INFO -- Kitchen: -----> Kitchen is finished. (0m14.43s)
+I, [2016-01-11T16:50:16.733272 #4424]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2016-01-11T16:50:16.791814 #4424]  INFO -- Kitchen: -----> Creating <default-prefapp>...
+I, [2016-01-11T16:50:38.830254 #4424]  INFO -- Kitchen: -----> Converging <default-prefapp>...
+I, [2016-01-11T16:56:12.741903 #4424]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+I, [2016-01-11T16:56:41.257461 #4424]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+I, [2016-01-11T17:02:56.305986 #4424]  INFO -- Kitchen: -----> Kitchen is finished. (12m39.57s)
+E, [2016-01-11T17:08:48.520833 #4489] ERROR -- Kitchen: 
+Argument `' returned multiple results:
+  * default-prefapp
+  * completa-prefapp
+
+
+I, [2016-01-13T16:13:37.099515 #4629]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2016-01-13T16:13:37.179865 #4629]  INFO -- Kitchen: -----> Destroying <default-prefapp>...
+I, [2016-01-13T16:13:58.682159 #4629]  INFO -- Kitchen: -----> Destroying <completa-prefapp>...
+I, [2016-01-13T16:14:04.286308 #4629]  INFO -- Kitchen: -----> Kitchen is finished. (0m27.18s)
+I, [2016-01-13T16:17:13.437175 #4774]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2016-01-13T16:17:13.499955 #4774]  INFO -- Kitchen: -----> Creating <completa-prefapp>...
+I, [2016-01-13T16:17:45.418032 #4774]  INFO -- Kitchen: -----> Converging <completa-prefapp>...
+I, [2016-01-13T16:24:08.118343 #4774]  INFO -- Kitchen: -----> Kitchen is finished. (6m54.68s)
